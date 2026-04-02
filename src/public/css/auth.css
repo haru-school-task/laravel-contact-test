@@ -1,0 +1,100 @@
+body {
+    background-color: #f2eee9;
+    /* 画像の背景色：落ち着いたベージュ */
+    color: #8b7969;
+    /* 文字色：濃い茶色 */
+    font-family: serif;
+    margin: 0;
+}
+
+/* ヘッダー */
+.auth-header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0dfde;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+.header-btn {
+    text-decoration: none;
+    color: #d9d5d1;
+    border: 1px solid #e0dfde;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+/* メインコンテンツ */
+.auth-main {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.auth-card {
+    background: #fff;
+    width: 480px;
+    padding: 60px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.auth-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0dfde;
+    background-color: #f4f2f0;
+    color: #8b7969;
+    box-sizing: border-box;
+}
+
+/* ボタン：濃い茶色の四角形 */
+.form-submit {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-submit {
+    background-color: #8b7969;
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+}

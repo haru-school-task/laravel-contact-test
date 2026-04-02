@@ -1,0 +1,46 @@
+<?php
+
+namespace App\Http\Requests;
+
+use Laravel\Fortify\Http\Requests\LoginRequest as FortifyLoginRequest;
+
+class LoginRequest extends FortifyLoginRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ];
+    }
+
+    /**
+     * エラーメッセージの日本語設定
+     */
+    public function messages(): array
+    {
+        return [
+            // 1. メールアドレス
+            'email.required' => 'メールアドレスを入力してください',
+            'email.email' => 'メールアドレスはメール形式で入力してください',
+
+            // 2. パスワード
+            'password.required' => 'パスワードを入力してください',
+        ];
+    }
+}

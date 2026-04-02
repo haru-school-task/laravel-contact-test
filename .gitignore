@@ -1,0 +1,23 @@
+# --- セキュリティ・機密情報 ---
+# --- 重要：src フォルダの中身で、src側の設定漏れをカバーする場合（念のため） ---
+src/.env
+src/storage/*.key
+
+# 万が一ルートにコピーしてしまった場合のバックアップ
+.env
+.env.bak
+
+# --- データベースの実データ (Docker) ---
+# ※フォルダ名は docker-compose.yml の volumes 指定に合わせてください
+docker/mysql/data/
+
+# --- OS・エディタ固有のゴミ ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.history/
+
+# --- コンテナのログ ---
+*.log
+docker/logs/

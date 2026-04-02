@@ -1,0 +1,15 @@
+/* 入力フォームの装飾 */
+.form-content input,
+.form-content select,
+.form-content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* エラーメッセージ */
+.error {
+    color: #ff0000;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}

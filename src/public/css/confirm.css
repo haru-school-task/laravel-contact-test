@@ -1,0 +1,12 @@
+/* テキストの行間を広げる */
+.form-content {
+    line-height: 1.8;
+}
+
+/* 修正ボタン（白背景に枠線など） */
+.back-link {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
